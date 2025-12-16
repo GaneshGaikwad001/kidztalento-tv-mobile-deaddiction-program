@@ -134,12 +134,56 @@
     font-size: 12px;
   }
 }
+    .brand-header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  text-align:center;
+}
+.brand-title{
+  font-size:36px;
+  font-weight:800;
+  margin:0;
+  letter-spacing:1px;
+  font-family:'Poppins', 'Segoe UI', sans-serif;
+}
+
+.brand-title span{
+  background:linear-gradient(
+    90deg,
+    #e63946,
+    #f4a261,
+    #2a9d8f,
+    #457b9d,
+    #8e44ad
+  );
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.brand-tagline{
+  font-size:14px;
+  color:#555;
+  margin-top:6px;
+  font-style:italic;
+  letter-spacing:0.5px;
+}
+
 
   </style>
 </head>
 <body>
   <header class="title-bar">
-    <img src="1.png" alt="logo" width="100" height="100">
+    <div class="brand-header">
+  <h1 class="brand-title">
+    KIDZ <span class="talento">TALENTO</span>
+  </h1>
+
+  <p class="brand-tagline">Enriching Unique Talents</p>
+ </div>
+
     <h1 style="font-size: 35px; text-align: center; padding-top: 10px;">TV-Mobile De-addiction Achievement Program (Pre Assessment)</h1>
     <div class="admin-link" id="openAdmin">Admin</div>
   </header>
@@ -658,6 +702,7 @@ modalContent.innerHTML = `
   </script>
 </body>
 </html>
+
 
 
 
