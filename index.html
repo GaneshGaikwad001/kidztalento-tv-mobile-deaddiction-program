@@ -134,14 +134,21 @@
     font-size: 12px;
   }
 }
-    .brand-header{
+.brand-header{
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  padding:10px;
+  padding:20px;
   text-align:center;
 }
+
+.brand-logo{
+  width:180px;
+  max-width:80%;
+  margin-bottom:12px;
+}
+
 .brand-title{
   font-size:36px;
   font-weight:800;
@@ -156,8 +163,8 @@
     #e63946,
     #f4a261,
     #2a9d8f,
-    #457b9f,
-    #8e44ac
+    #457b9d,
+    #8e44ad
   );
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -170,6 +177,11 @@
   font-style:italic;
   letter-spacing:0.5px;
 }
+@media(max-width:480px){
+  .brand-title{font-size:28px;}
+  .brand-logo{width:140px;}
+}
+
 
 
   </style>
@@ -702,6 +714,7 @@ modalContent.innerHTML = `
   </script>
 </body>
 </html>
+
 
 
 
